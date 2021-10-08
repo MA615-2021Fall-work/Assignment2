@@ -1,5 +1,6 @@
 #input data
 library(tidyverse)
+library(dplyr)
 #The first dataset is about the mean years that females study in school from age 25
 meanyearsinschool1 <- read.csv("/Users/xuchen/Desktop/MA615/assignment 2/meanyearsinschool1.csv", header = T)
 #The second dataset is about the mean years that female study in school from age 15 to 24
