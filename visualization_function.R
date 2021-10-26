@@ -18,6 +18,19 @@ p2 <- ggplot(data = finaltable, aes(x = meanyearseducated, y = femaleemploymentr
   ylab("Female's employment rate who is older than 15")
 show(p2)
 
-
+#####################
+#' Comments on Daniel's visualization_function:
+#' There's a small spelling mistake in line 2, which is supposed to be "together". 
+#' And I think it is supposed to write visualization plot as a function.
+#' Just like this way: plot1 <- function(t){
+#' t %>%
+#' ggplot(data = finaltable, aes(x = meanyearseducated, y = femaleemploymentrate, color = country))+
+#' geom_point()+
+#'  geom_smooth(method="glm", se=TRUE)+
+#'  xlim(0, 30)+
+#'  ylim(0, 75)+
+#'  xlab("Female's Mean Years in school who is older than 15")+
+#'  ylab("Female's employment rate who is older than 15")}
+#'  Then you can source("visualization_function.R") in the wrangling_code.
 
 
